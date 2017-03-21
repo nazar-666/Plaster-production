@@ -1,6 +1,17 @@
 Begin DDE Information.
     Last DDE Source:	2
 Begin DDE Source Definition.
+    Source Name:		Galaxy
+    Application Name:		\\NA\NA
+    Topic Name:			NA
+    DDE Source ID:		1
+    Request Initial Data:	1
+    Always Advise:		0
+    SuiteLink:			3
+    Begin DDE Points
+    End DDE Points
+End DDE Source Definition.
+Begin DDE Source Definition.
     Source Name:		TFAST
     Application Name:		DasSiDirect
     Topic Name:			TFAST
@@ -215,7 +226,6 @@ Begin DDE Source Definition.
         PG003\SetPoint;109B:  DB1003,REAL2
         PG002\SetPoint;1099:  DB1002,REAL2
         PG001\SetPoint;1097:  DB1001,REAL2
-        FC013\SetPoint;1096:  DB613,REAL18
         FC012\SetPoint;1095:  DB612,REAL18
         FC011\SetPoint;1094:  DB611,REAL18
         FC010\SetPoint;1093:  DB610,REAL18
@@ -303,9 +313,6 @@ Begin DDE Source Definition.
         M001\OCurrent;1020:  DB301,Real20
         FC001\SetPoint;101F:  DB601,REAL18
         A001\OutEng;101E:  DB101,Real32
-        ZmWg\Counter1;101D:  DB715,Real38
-        ZmWg\Counter2;101C:  DB715,Real42
-        ZmWg\Counter3;101B:  DB715,Real46
         Analogzm\LimitHH;1015:  DB704,Real52
         Analogzm\LimitH;1014:  DB704,Real48
         Analogzm\LimitL;1013:  DB704,Real44
@@ -412,7 +419,6 @@ Begin DDE Source Definition.
         ZmValve\Number;0FA5:  DB700,int14
         ZmValve\CloseTime;0FA4:  DB700,int6
         ZmValve\OpenTime;0FA3:  DB700,int4
-        ZmWg\Number;0FA0:  DB715,int50
         ZmMSimo\StopDelay;0F9D:  DB710,int10
         ZmMSimo\StartDelay;0F9C:  DB710,int8
         ZmMSimo\TSpeed;0F9B:  DB710,int6
@@ -1318,76 +1324,6 @@ Begin DDE Source Definition.
         A029\Ack;0B77:  DB129,X36.1
         A029\ATotal;0B76:  DB129,X31.1
         A029\DPAlarm;0B74:  DB129,X30.4
-        V045\OManual;0B73:  DB295,X15.0
-        V045\OAuto;0B72:  DB295,X14.7
-        V045\OLocal;0B71:  DB295,X15.1
-        V045\OClose;0B70:  DB295,X15.6
-        V045\OOpen;0B6F:  DB295,X15.5
-        V045\Warning;0B6E:  DB295,X14.6
-        V045\ATotal;0B6D:  DB295,X14.5
-        V045\AClose;0B6C:  DB295,X14.4
-        V045\AOpen;0B6B:  DB295,X14.3
-        V045\ATotalStop;0B6A:  DB295,X14.1
-        V045\ABreaker;0B69:  DB295,X14.0
-        V045\ManClose;0B68:  DB295,X16.7
-        V045\ManOpen;0B67:  DB295,X16.6
-        V045\Ack;0B65:  DB295,X16.5
-        V044\OManual;0B64:  DB294,X15.0
-        V044\OAuto;0B63:  DB294,X14.7
-        V044\OLocal;0B62:  DB294,X15.1
-        V044\OClose;0B61:  DB294,X15.6
-        V044\OOpen;0B60:  DB294,X15.5
-        V044\Warning;0B5F:  DB294,X14.6
-        V044\ATotal;0B5E:  DB294,X14.5
-        V044\AClose;0B5D:  DB294,X14.4
-        V044\AOpen;0B5C:  DB294,X14.3
-        V044\ATotalStop;0B5B:  DB294,X14.1
-        V044\ABreaker;0B5A:  DB294,X14.0
-        V044\ManClose;0B59:  DB294,X16.7
-        V044\ManOpen;0B58:  DB294,X16.6
-        V044\Ack;0B56:  DB294,X16.5
-        V043\OManual;0B55:  DB293,X15.0
-        V043\OAuto;0B54:  DB293,X14.7
-        V043\OLocal;0B53:  DB293,X15.1
-        V043\OClose;0B52:  DB293,X15.6
-        V043\OOpen;0B51:  DB293,X15.5
-        V043\Warning;0B50:  DB293,X14.6
-        V043\ATotal;0B4F:  DB293,X14.5
-        V043\AClose;0B4E:  DB293,X14.4
-        V043\AOpen;0B4D:  DB293,X14.3
-        V043\ATotalStop;0B4C:  DB293,X14.1
-        V043\ABreaker;0B4B:  DB293,X14.0
-        V043\ManClose;0B4A:  DB293,X16.7
-        V043\ManOpen;0B49:  DB293,X16.6
-        V043\Ack;0B47:  DB293,X16.5
-        V042\OManual;0B46:  DB292,X15.0
-        V042\OAuto;0B45:  DB292,X14.7
-        V042\OLocal;0B44:  DB292,X15.1
-        V042\OClose;0B43:  DB292,X15.6
-        V042\OOpen;0B42:  DB292,X15.5
-        V042\Warning;0B41:  DB292,X14.6
-        V042\ATotal;0B40:  DB292,X14.5
-        V042\AClose;0B3F:  DB292,X14.4
-        V042\AOpen;0B3E:  DB292,X14.3
-        V042\ATotalStop;0B3D:  DB292,X14.1
-        V042\ABreaker;0B3C:  DB292,X14.0
-        V042\ManClose;0B3B:  DB292,X16.7
-        V042\ManOpen;0B3A:  DB292,X16.6
-        V042\Ack;0B38:  DB292,X16.5
-        V041\OManual;0B37:  DB291,X15.0
-        V041\OAuto;0B36:  DB291,X14.7
-        V041\OLocal;0B35:  DB291,X15.1
-        V041\OClose;0B34:  DB291,X15.6
-        V041\OOpen;0B33:  DB291,X15.5
-        V041\Warning;0B32:  DB291,X14.6
-        V041\ATotal;0B31:  DB291,X14.5
-        V041\AClose;0B30:  DB291,X14.4
-        V041\AOpen;0B2F:  DB291,X14.3
-        V041\ATotalStop;0B2E:  DB291,X14.1
-        V041\ABreaker;0B2D:  DB291,X14.0
-        V041\ManClose;0B2C:  DB291,X16.7
-        V041\ManOpen;0B2B:  DB291,X16.6
-        V041\Ack;0B29:  DB291,X16.5
         V040\OManual;0B28:  DB290,X15.0
         V040\OAuto;0B27:  DB290,X14.7
         V040\OLocal;0B26:  DB290,X15.1
@@ -1556,68 +1492,6 @@ Begin DDE Source Definition.
         V029\ManClose;0A78:  DB279,X16.7
         V029\ManOpen;0A77:  DB279,X16.6
         V029\Ack;0A75:  DB279,X16.5
-        Gr019\ILocal;0A74:  DB49,X6.7
-        Gr019\IManual;0A73:  DB49,X6.6
-        Gr019\IAut;0A72:  DB49,X6.5
-        Gr019\GrpStop;0A71:  DB49,X6.2
-        Gr019\GrpStart;0A70:  DB49,X6.1
-        Gr019\Ack;0A6F:  DB49,X6.4
-        Gr019\TotalStop;0A6E:  DB49,X6.3
-        Gr019\GStopping;0A6D:  DB49,X5.4
-        Gr019\GStarting;0A6C:  DB49,X5.3
-        Gr019\ORun;0A6B:  DB49,X5.2
-        Gr019\OLocal;0A6A:  DB49,X4.7
-        Gr019\OManual;0A69:  DB49,X4.6
-        Gr019\OAuto;0A68:  DB49,X4.5
-        Gr019\Warning;0A67:  DB49,X4.4
-        Gr019\ATotal;0A65:  DB49,X4.0
-        Gr018\ILocal;0A64:  DB48,X6.7
-        Gr018\IManual;0A63:  DB48,X6.6
-        Gr018\IAut;0A62:  DB48,X6.5
-        Gr018\GrpStop;0A61:  DB48,X6.2
-        Gr018\GrpStart;0A60:  DB48,X6.1
-        Gr018\Ack;0A5F:  DB48,X6.4
-        Gr018\TotalStop;0A5E:  DB48,X6.3
-        Gr018\GStopping;0A5D:  DB48,X5.4
-        Gr018\GStarting;0A5C:  DB48,X5.3
-        Gr018\ORun;0A5B:  DB48,X5.2
-        Gr018\OLocal;0A5A:  DB48,X4.7
-        Gr018\OManual;0A59:  DB48,X4.6
-        Gr018\OAuto;0A58:  DB48,X4.5
-        Gr018\Warning;0A57:  DB48,X4.4
-        Gr018\ATotal;0A55:  DB48,X4.0
-        Gr017\ILocal;0A54:  DB47,X6.7
-        Gr017\IManual;0A53:  DB47,X6.6
-        Gr017\IAut;0A52:  DB47,X6.5
-        Gr017\GrpStop;0A51:  DB47,X6.2
-        Gr017\GrpStart;0A50:  DB47,X6.1
-        Gr017\Ack;0A4F:  DB47,X6.4
-        Gr017\TotalStop;0A4E:  DB47,X6.3
-        Gr017\GStopping;0A4D:  DB47,X5.4
-        Gr017\GStarting;0A4C:  DB47,X5.3
-        Gr017\ORun;0A4B:  DB47,X5.2
-        Gr017\OLocal;0A4A:  DB47,X4.7
-        Gr017\OManual;0A49:  DB47,X4.6
-        Gr017\OAuto;0A48:  DB47,X4.5
-        Gr017\Warning;0A47:  DB47,X4.4
-        Gr017\ATotal;0A45:  DB47,X4.0
-        FC013\ATotalStop;0A44:  DB613,X14.1
-        FC013\ASpeed;0A43:  DB613,X15.6
-        FC013\ORun;0A42:  DB613,X15.4
-        FC013\OLocal;0A41:  DB613,X15.0
-        FC013\OAuto;0A40:  DB613,X14.6
-        FC013\OManual;0A3F:  DB613,X14.7
-        FC013\Warning;0A3E:  DB613,X14.5
-        FC013\ManReverse;0A3D:  DB613,X16.5
-        FC013\ManForward;0A3C:  DB613,X16.3
-        FC013\OReverse;0A3B:  DB613,X15.2
-        FC013\OForward;0A3A:  DB613,X15.3
-        FC013\Ack;0A39:  DB613,X16.2
-        FC013\ARun;0A38:  DB613,X14.3
-        FC013\ATotal;0A37:  DB613,X14.4
-        FC013\ABreaker;0A36:  DB613,X14.0
-        FC013\AConverter;0A35:  DB613,X14.2
-        FC013\ManStop;0A33:  DB613,X16.4
         FC012\ATotalStop;0A32:  DB612,X14.1
         FC012\ASpeed;0A31:  DB612,X15.6
         FC012\ORun;0A30:  DB612,X15.4
@@ -3616,20 +3490,6 @@ Begin DDE Source Definition.
         ZmValve\LOpen;00B5:  DB700,X0.3
         ZmValve\LTStop;00B4:  DB700,X0.1
         ZmValve\LBreaker;00B2:  DB700,X0.0
-        ZmWg\Cancel;00AC:  DB715,X52.0
-        ZmWg\Save;00AB:  DB715,X52.1
-        ZmWg\Dozvil;00AA:  DB715,X52.2
-        ZmWg\ISelScale;00A9:  DB715,X24.5
-        ZmWg\ISelinOut;00A8:  DB715,X24.4
-        ZmWg\ONoRelease;00A7:  DB715,X21.6
-        ZmWg\OSingleSc;00A6:  DB715,X21.5
-        ZmWg\OSelect;00A5:  DB715,X21.4
-        ZmWg\OutEnable;00A4:  DB715,X0.6
-        ZmWg\RunLock;00A3:  DB715,X0.5
-        ZmWg\StopEnable;00A2:  DB715,X0.4
-        ZmWg\StartEnabl;00A1:  DB715,X0.3
-        ZmWg\LNoMat;00A0:  DB715,X0.2
-        ZmWg\LDAlarm;009E:  DB715,X0.1
         AL001\AIn;009D:  DB801,X0.3
         A001\Ack;009C:  DB101,X36.1
         A001\ATotal;009B:  DB101,X31.1
@@ -3656,17 +3516,6 @@ Begin DDE Source Definition.
         Analogzm\Llock;0059:  DB704,X0.2
         Analogzm\Hlock;0058:  DB704,X0.3
         Analogzm\LLlock;0056:  DB704,X0.1
-    End DDE Points
-End DDE Source Definition.
-Begin DDE Source Definition.
-    Source Name:		Galaxy
-    Application Name:		\\NA\NA
-    Topic Name:			NA
-    DDE Source ID:		1
-    Request Initial Data:	1
-    Always Advise:		0
-    SuiteLink:			3
-    Begin DDE Points
     End DDE Points
 End DDE Source Definition.
 End DDE Information.
